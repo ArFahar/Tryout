@@ -1,0 +1,9 @@
+-- Sumber: TDD 3.8 (roles wajib di semua lingkungan)
+INSERT INTO roles (id, code, name) VALUES
+  ('00000000-0000-7000-8000-000000000001', 'STUDENT',        'Student'),
+  ('00000000-0000-7000-8000-000000000002', 'CONTRIBUTOR',    'Tutor / Contributor'),
+  ('00000000-0000-7000-8000-000000000003', 'CONTENT_EDITOR', 'Content Editor'),
+  ('00000000-0000-7000-8000-000000000004', 'EXAM_ADMIN',     'Exam Admin'),
+  ('00000000-0000-7000-8000-000000000005', 'SUPER_ADMIN',    'Super Admin')
+ON CONFLICT (code) DO NOTHING;
+

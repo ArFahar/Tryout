@@ -1,0 +1,34 @@
+{
+  "name": "@cogniverse/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "dev": "tsc -p tsconfig.json && node --enable-source-maps dist/main.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@cogniverse/contracts": "workspace:*",
+    "@nestjs/common": "11.2.9",
+    "@nestjs/core": "11.2.9",
+    "@nestjs/platform-express": "11.2.9",
+    "argon2": "0.44.0",
+    "cookie-parser": "1.4.7",
+    "jose": "6.2.17",
+    "pg": "8.16.3",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "sanitize-html": "2.17.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "1.4.10",
+    "@types/express": "5.0.6",
+    "@types/node": "22.20.5",
+    "@types/pg": "8.15.6",
+    "@types/sanitize-html": "2.16.0",
+    "typescript": "5.9.3",
+    "vitest": "4.1.0"
+  }
+}
